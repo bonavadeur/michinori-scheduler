@@ -93,7 +93,7 @@ func initInformers(clientset *kubernetes.Clientset, podQueue chan *v1.Pod, quit 
 }
 
 func main() {
-	bonalib.Log("Konnichiwa, kore wa Michinori-Scheduler desu", "")
+	bonalib.Log("Konnichiwa, kore wa Michinori-Scheduler desuyo", "")
 	rand.Seed(time.Now().Unix())
 
 	podQueue := make(chan *v1.Pod, 300)
